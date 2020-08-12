@@ -5,7 +5,7 @@ const iPhone = devices['iPhone 6'];
 module.exports = {
     browserType: webkit,
     launchConfig: {
-        headless: false,
+        headless: true,
         slowMo: 10
     },
     contextConfig: {
