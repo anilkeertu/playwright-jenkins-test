@@ -7,9 +7,9 @@ export const root = async () => await page.$(rootSelector);
 
 export const load = async () => {
     browser = await browserType.launch(launchConfig);
-    context = await browser.newContext(contextConfig);
+    context = await browser.newContext();
     page = await context.newPage();
-    await page.goto(baseURL);
+    await page.goto('https://www.google.com');
 };
 
 export const close = async () => await browser.close();
